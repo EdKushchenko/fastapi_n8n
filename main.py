@@ -5,3 +5,8 @@ app = FastAPI()
 @app.get("/")
 async def root():
     return {"greeting": "mazamba!", "message": "zazanva!", "bizimba": "zazoomba"}
+
+
+@app.get("/reviews")
+async def root():
+    return {"review_id": "1", "username": "vasya", "rating": "5", "text": "very boring"}
