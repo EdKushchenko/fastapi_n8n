@@ -8,5 +8,5 @@ async def root():
 
 
 @app.get("/reviews")
-async def root():
+async def get_reviews():
     return {"review_id": "1", "username": "vasya", "rating": "5", "text": "very boring"}
